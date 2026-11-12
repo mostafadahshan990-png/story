@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>متجر بيتي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bar">🚚 شحن مجاني للطلبات فوق 1000 جنيه · كود الخصم الأول: WELCOME10</div>
+<header>
+  <h1 class="logo">🏠 متجر بيتي</h1>
+  <input class="search" id="q" type="search" placeholder="ابحث عن منتج..." aria-label="بحث">
+  <button class="ib" id="bWish" aria-label="المفضلة">♥ المفضلة <b id="cW">0</b></button>
+  <button class="ib" id="bCart" aria-label="السلة">🛒 السلة <b id="cC">0</b></button>
+  <button class="ib" id="th" aria-label="الوضع الليلي">🌓</button>
+  <button class="ib" id="bAdm" aria-label="لوحة التحكم">⚙️ الإدارة</button>
+</header>
+
+<section class="hero2">
+  <div class="pn">
+    <h2>كل احتياجات بيتك في مكان واحد</h2>
+    <p>منتجات مختارة بأسعار مناسبة، وخصومات تصل إلى 30% والدفع عند الاستلام.</p>
+    <a class="btn" href="#shop">تسوق الآن</a>
+    <div class="cd">ينتهي عرض اليوم بعد <b id="cd">--:--:--</b></div>
+  </div>
+  <div class="art" aria-hidden="true"><span>🛋️</span><span>🍹</span><span>🪴</span><span>💡</span><span>🛏️</span><span>☕</span></div>
+</section>
+
+<section class="feat">
+  <div><i>🚚</i><span><b>شحن سريع</b><small>توصيل خلال 2-4 أيام</small></span></div>
+  <div><i>💵</i><span><b>الدفع عند الاستلام</b><small>وافحص المنتج أولاً</small></span></div>
+  <div><i>↩️</i><span><b>استرجاع مجاني</b><small>خلال 14 يوم</small></span></div>
+  <div><i>🎧</i><span><b>دعم متواصل</b><small>كل يوم من 9 ص لـ 9 م</small></span></div>
+</section>
+
+<div id="shop"></div>
+<div class="tools" id="cats"></div>
+<div class="tools">
+  <div class="filt">
+    <label style="margin:0">أقصى سعر: <b id="mxv">5٬000 ج.م</b></label>
+    <input type="range" id="mx" min="50" max="5000" step="50" value="5000" aria-label="أقصى سعر">
+    <label style="margin:0;font-weight:400"><input type="checkbox" id="dl"> التخفيضات فقط</label>
+  </div>
+</div>
+
+<main class="grid" id="grid"></main>
+<div style="text-align:center;padding-bottom:20px"><button class="btn alt" id="lm">عرض المزيد</button></div>
+
+<section class="sec">
+  <h2>آراء عملائنا</h2>
+  <div class="rv">
+    <blockquote>وصلني الطلب في 3 أيام والمنتج مطابق للصور تماماً. تعامل محترم جداً.<cite>⭐⭐⭐⭐⭐ منى، القاهرة</cite></blockquote>
+    <blockquote>أسعار ممتازة والدفع عند الاستلام خلاني أطمن. هطلب تاني بالتأكيد.<cite>⭐⭐⭐⭐⭐ أحمد، الإسكندرية</cite></blockquote>
+    <blockquote>استبدلوا لي المنتج بسهولة لما المقاس ما ناسبنيش.<cite>⭐⭐⭐⭐ سارة، الشرقية</cite></blockquote>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>أسئلة شائعة</h2>
+  <details><summary>كم تستغرق مدة الشحن؟</summary><p>من 2 إلى 4 أيام عمل حسب المحافظة.</p></details>
+  <details><summary>هل أستطيع الاسترجاع؟</summary><p>نعم، خلال 14 يوم من الاستلام بشرط أن يكون المنتج بحالته الأصلية.</p></details>
+  <details><summary>ما طرق الدفع المتاحة؟</summary><p>الدفع عند الاستلام أو فودافون كاش.</p></details>
+  <details><summary>كيف أتابع طلبي؟</summary><p>نتواصل معك على رقم الموبايل لتأكيد الطلب ثم نرسل لك موعد التسليم.</p></details>
+</section>
+
+<section class="sec">
+  <div class="nl">
+    <h2>اشترك واحصل على عروض حصرية</h2>
+    <p>سجّل بريدك ليصلك كل جديد.</p>
+    <form id="nl"><input type="email" required placeholder="بريدك الإلكتروني" aria-label="البريد الإلكتروني"><button class="btn">اشترك</button></form>
+  </div>
+</section>
+
+<footer>
+  <div class="fg">
+    <div><h4>🏠 متجر بيتي</h4><a>كل احتياجات بيتك بأفضل سعر.</a></div>
+    <div><h4>التسوق</h4><a href="#shop">كل المنتجات</a><a href="#shop">العروض</a></div>
+    <div><h4>المساعدة</h4><a>سياسة الاسترجاع</a><a>الشحن والتوصيل</a><a>الأسئلة الشائعة</a></div>
+    <div><h4>تواصل معنا</h4><a>01000000000</a><a>support@example.com</a></div>
+  </div>
+  © متجر بيتي · جميع الحقوق محفوظة
+</footer>
+
+<dialog id="dP"><div class="dh"><h3 id="pT"></h3><button class="x" data-close aria-label="إغلاق">×</button></div><div class="db" id="pB"></div></dialog>
+
+<dialog id="dC" class="side"><div class="dh"><h3>سلة المشتريات</h3><button class="x" data-close aria-label="إغلاق">×</button></div><div class="db" id="cB"></div></dialog>
+
+<dialog id="dK"><div class="dh"><h3>إتمام الطلب</h3><button class="x" data-close aria-label="إغلاق">×</button></div><div class="db" id="kB"></div></dialog>
+
+<dialog id="dA"><div class="dh"><h3>لوحة التحكم</h3><button class="x" data-close aria-label="إغلاق">×</button></div><div class="db" id="aB"></div></dialog>
+
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
